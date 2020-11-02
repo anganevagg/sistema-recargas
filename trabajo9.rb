@@ -56,7 +56,6 @@ def mostrar_recargas(companias, recargas)
 	puts "\nRecargas realizadas"
 	for compania in (0..3)
 		puts "\n#{companias[compania]}"
-		flag=false
 		for recarga in (0..recargas[compania].length-1)
 			puts recargas[compania][recarga]
 		end
