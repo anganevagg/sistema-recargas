@@ -1,4 +1,4 @@
-import os
+from os import system
 recargas = [[],[],[],[]]
 companias = ("1.- Telcel", "2.- Movistar", "3.- Unefon", "4.- AT&T")
 menuPrincipal = ("1.- Recarga","2.- Reporte de recargas", "3.- Salir")
@@ -46,11 +46,11 @@ def mostrar_recargas():
 
 eleccion = 1
 while eleccion != 3:
-    os.system("cls")
+    system("clear")
     print ("Centro de recargas Ultra".center(20," "))
     mostrar_menu(menuPrincipal)
     eleccion = validar("\nElija una opción (1 a 3): ")
-    os.system("cls")
+    system("clear")
     if eleccion == 1:
         registrar_recarga()
     elif eleccion == 2:

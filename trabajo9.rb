@@ -18,6 +18,7 @@ def mostrar_menu(list)
 end
 
 def validar(mensaje)
+	puts mensaje
 	i=gets.to_i
 	while i==0
 		puts mensaje
